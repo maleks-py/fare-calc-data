@@ -1,0 +1,49 @@
+# Publishes catalog.json as a GitHub Release asset once a day.
+#
+# Cost: $0 — public repos get free Actions minutes, and the runner work here is
+# a few minutes of Nominatim lookups (rate-limited to 1/sec per their policy).
+# The app NEVER triggers runs; it only downloads the latest release asset:
+#   https://github.com/<owner>/<repo>/releases/latest/download/catalog.json
+name: Publish catalog
+
+on:
+  schedule:
+    # 19:17 UTC daily = 03:17 Asia/Manila. Off-round minute spreads load on
+    # GitHub's schedule queue and makes the run time predictable for PHT users.
+    - cron: "17 19 * * *"
+  # Allow a manual run from the Actions tab (e.g. right after setup, or after
+  # editing fares.json — the app will pick the new file up on its next sync).
+  workflow_dispatch: {}
+
+permissions:
+  contents: write # needed to create releases
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build catalog.json
+        run: python scripts/build_catalog.py
+
+      - name: Upload to the latest Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TAG="catalog-$(date -u +%Y%m%d)"
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            # Same-day rerun: replace the asset in the existing release.
+            gh release upload "$TAG" catalog.json --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create "$TAG" catalog.json \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "Fare catalog ${TAG#catalog-}" \
+              --notes "Automated daily catalog build. Fares source: fares.json in this repo; coordinates: OpenStreetMap/Nominatim." \
+              --latest
+          fi
