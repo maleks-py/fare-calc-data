@@ -1,0 +1,5895 @@
+{
+  "version": 2,
+  "lastUpdated": "2026-10-02",
+  "rules": [
+    {
+      "mode": "JEEPNEY",
+      "fareType": "DISTANCE_BASED",
+      "baseFareCentavos": 1400,
+      "baseDistanceKm": 4.0,
+      "perKmCentavos": 200,
+      "minimumFareCentavos": 1400,
+      "effectiveDate": "2026-09-28",
+      "source": "LTFRB fare matrices effective 2026-09-28 (SunStar/BusinessMirror/PTV News reports of official guides) - see docs/SOURCES.md"
+    },
+    {
+      "mode": "MODERN_JEEPNEY",
+      "fareType": "DISTANCE_BASED",
+      "baseFareCentavos": 1700,
+      "baseDistanceKm": 4.0,
+      "perKmCentavos": 240,
+      "minimumFareCentavos": 1700,
+      "effectiveDate": "2026-09-28",
+      "source": "LTFRB fare matrices effective 2026-09-28 (SunStar/BusinessMirror/PTV News reports of official guides) - see docs/SOURCES.md"
+    },
+    {
+      "mode": "BUS_ORDINARY",
+      "fareType": "DISTANCE_BASED",
+      "baseFareCentavos": 1500,
+      "baseDistanceKm": 5.0,
+      "perKmCentavos": 249,
+      "minimumFareCentavos": 1500,
+      "effectiveDate": "2026-09-28",
+      "source": "LTFRB fare matrices effective 2026-09-28 (SunStar/BusinessMirror/PTV News reports of official guides) - see docs/SOURCES.md"
+    },
+    {
+      "mode": "BUS_AIRCON",
+      "fareType": "DISTANCE_BASED",
+      "baseFareCentavos": 1800,
+      "baseDistanceKm": 5.0,
+      "perKmCentavos": 298,
+      "minimumFareCentavos": 1800,
+      "effectiveDate": "2026-09-28",
+      "source": "LTFRB fare matrices effective 2026-09-28 (SunStar/BusinessMirror/PTV News reports of official guides) - see docs/SOURCES.md"
+    },
+    {
+      "mode": "UV_EXPRESS",
+      "fareType": "DISTANCE_BASED",
+      "baseFareCentavos": 260,
+      "baseDistanceKm": 1.0,
+      "perKmCentavos": 260,
+      "minimumFareCentavos": 260,
+      "effectiveDate": "2026-09-28",
+      "source": "LTFRB provisional rate effective 2026-09-28: P2.60/km traditional units (P3.00/km modern); route minimums unverified - see docs/SOURCES.md"
+    },
+    {
+      "mode": "TRICYCLE",
+      "fareType": "FLAT",
+      "baseFareCentavos": 0,
+      "baseDistanceKm": 0.0,
+      "perKmCentavos": 0,
+      "minimumFareCentavos": 0,
+      "effectiveDate": "2026-09-28",
+      "source": "Per-city negotiated rates - record the fare you actually paid (manual trip log)"
+    },
+    {
+      "mode": "MRT3",
+      "fareType": "STATION_MATRIX",
+      "baseFareCentavos": 650,
+      "baseDistanceKm": 0.0,
+      "perKmCentavos": 0,
+      "minimumFareCentavos": 1400,
+      "effectiveDate": "2026-03-23",
+      "source": "DOTr 50% fare discount effective 2026-03-23 (Manila Bulletin); standard tiers P13-28 - see docs/SOURCES.md"
+    },
+    {
+      "mode": "LRT1",
+      "fareType": "STATION_MATRIX",
+      "baseFareCentavos": 1900,
+      "baseDistanceKm": 0.0,
+      "perKmCentavos": 0,
+      "minimumFareCentavos": 5200,
+      "effectiveDate": "2025-04-02",
+      "source": "DOTr RRU-approved scheme effective 2025-04-02: P16.25 boarding + P1.47/km (PNA/Philstar); station pairs INTERPOLATED - see docs/SOURCES.md"
+    },
+    {
+      "mode": "LRT2",
+      "fareType": "STATION_MATRIX",
+      "baseFareCentavos": 650,
+      "baseDistanceKm": 0.0,
+      "perKmCentavos": 0,
+      "minimumFareCentavos": 1650,
+      "effectiveDate": "2026-03-23",
+      "source": "DOTr 50% fare discount effective 2026-03-23 (Manila Bulletin/LTO Portal); standard P13.29+P1.21/km; station pairs INTERPOLATED - see docs/SOURCES.md"
+    }
+  ],
+  "discounts": [
+    {
+      "passengerType": "STUDENT",
+      "discountPercent": 20,
+      "appliesToModes": "JEEPNEY,MODERN_JEEPNEY,BUS_ORDINARY,BUS_AIRCON,UV_EXPRESS,LRT1"
+    },
+    {
+      "passengerType": "SENIOR",
+      "discountPercent": 20,
+      "appliesToModes": "JEEPNEY,MODERN_JEEPNEY,BUS_ORDINARY,BUS_AIRCON,UV_EXPRESS,LRT1"
+    },
+    {
+      "passengerType": "PWD",
+      "discountPercent": 20,
+      "appliesToModes": "JEEPNEY,MODERN_JEEPNEY,BUS_ORDINARY,BUS_AIRCON,UV_EXPRESS,LRT1"
+    }
+  ],
+  "stations": [
+    {
+      "id": 1,
+      "name": "North Avenue",
+      "line": "MRT3",
+      "sequence": 1
+    },
+    {
+      "id": 2,
+      "name": "Quezon Avenue",
+      "line": "MRT3",
+      "sequence": 2
+    },
+    {
+      "id": 3,
+      "name": "GMA-Kamuning",
+      "line": "MRT3",
+      "sequence": 3
+    },
+    {
+      "id": 4,
+      "name": "Araneta-Cubao",
+      "line": "MRT3",
+      "sequence": 4
+    },
+    {
+      "id": 5,
+      "name": "Santolan-Annapolis",
+      "line": "MRT3",
+      "sequence": 5
+    },
+    {
+      "id": 6,
+      "name": "Ortigas",
+      "line": "MRT3",
+      "sequence": 6
+    },
+    {
+      "id": 7,
+      "name": "Shaw Boulevard",
+      "line": "MRT3",
+      "sequence": 7
+    },
+    {
+      "id": 8,
+      "name": "Boni",
+      "line": "MRT3",
+      "sequence": 8
+    },
+    {
+      "id": 9,
+      "name": "Guadalupe",
+      "line": "MRT3",
+      "sequence": 9
+    },
+    {
+      "id": 10,
+      "name": "Buendia",
+      "line": "MRT3",
+      "sequence": 10
+    },
+    {
+      "id": 11,
+      "name": "Ayala",
+      "line": "MRT3",
+      "sequence": 11
+    },
+    {
+      "id": 12,
+      "name": "Magallanes",
+      "line": "MRT3",
+      "sequence": 12
+    },
+    {
+      "id": 13,
+      "name": "Taft Avenue",
+      "line": "MRT3",
+      "sequence": 13
+    },
+    {
+      "id": 101,
+      "name": "Fernando Poe Jr.",
+      "line": "LRT1",
+      "sequence": 1
+    },
+    {
+      "id": 102,
+      "name": "Balintawak",
+      "line": "LRT1",
+      "sequence": 2
+    },
+    {
+      "id": 103,
+      "name": "Monumento",
+      "line": "LRT1",
+      "sequence": 3
+    },
+    {
+      "id": 104,
+      "name": "5th Avenue",
+      "line": "LRT1",
+      "sequence": 4
+    },
+    {
+      "id": 105,
+      "name": "R. Papa",
+      "line": "LRT1",
+      "sequence": 5
+    },
+    {
+      "id": 106,
+      "name": "Abad Santos",
+      "line": "LRT1",
+      "sequence": 6
+    },
+    {
+      "id": 107,
+      "name": "Blumentritt",
+      "line": "LRT1",
+      "sequence": 7
+    },
+    {
+      "id": 108,
+      "name": "Tayuman",
+      "line": "LRT1",
+      "sequence": 8
+    },
+    {
+      "id": 109,
+      "name": "Bambang",
+      "line": "LRT1",
+      "sequence": 9
+    },
+    {
+      "id": 110,
+      "name": "Doroteo Jose",
+      "line": "LRT1",
+      "sequence": 10
+    },
+    {
+      "id": 111,
+      "name": "Carriedo",
+      "line": "LRT1",
+      "sequence": 11
+    },
+    {
+      "id": 112,
+      "name": "Central Terminal",
+      "line": "LRT1",
+      "sequence": 12
+    },
+    {
+      "id": 113,
+      "name": "UN Avenue",
+      "line": "LRT1",
+      "sequence": 13
+    },
+    {
+      "id": 114,
+      "name": "Pedro Gil",
+      "line": "LRT1",
+      "sequence": 14
+    },
+    {
+      "id": 115,
+      "name": "Quirino Avenue",
+      "line": "LRT1",
+      "sequence": 15
+    },
+    {
+      "id": 116,
+      "name": "Vito Cruz",
+      "line": "LRT1",
+      "sequence": 16
+    },
+    {
+      "id": 117,
+      "name": "Gil Puyat",
+      "line": "LRT1",
+      "sequence": 17
+    },
+    {
+      "id": 118,
+      "name": "Libertad",
+      "line": "LRT1",
+      "sequence": 18
+    },
+    {
+      "id": 119,
+      "name": "EDSA",
+      "line": "LRT1",
+      "sequence": 19
+    },
+    {
+      "id": 120,
+      "name": "Baclaran",
+      "line": "LRT1",
+      "sequence": 20
+    },
+    {
+      "id": 121,
+      "name": "Redemptorist",
+      "line": "LRT1",
+      "sequence": 21
+    },
+    {
+      "id": 122,
+      "name": "MIA",
+      "line": "LRT1",
+      "sequence": 22
+    },
+    {
+      "id": 123,
+      "name": "Asia World",
+      "line": "LRT1",
+      "sequence": 23
+    },
+    {
+      "id": 124,
+      "name": "Ninoy Aquino",
+      "line": "LRT1",
+      "sequence": 24
+    },
+    {
+      "id": 125,
+      "name": "Dr. Santos",
+      "line": "LRT1",
+      "sequence": 25
+    },
+    {
+      "id": 201,
+      "name": "Recto",
+      "line": "LRT2",
+      "sequence": 1
+    },
+    {
+      "id": 202,
+      "name": "Legarda",
+      "line": "LRT2",
+      "sequence": 2
+    },
+    {
+      "id": 203,
+      "name": "Pureza",
+      "line": "LRT2",
+      "sequence": 3
+    },
+    {
+      "id": 204,
+      "name": "V. Mapa",
+      "line": "LRT2",
+      "sequence": 4
+    },
+    {
+      "id": 205,
+      "name": "J. Ruiz",
+      "line": "LRT2",
+      "sequence": 5
+    },
+    {
+      "id": 206,
+      "name": "Gilmore",
+      "line": "LRT2",
+      "sequence": 6
+    },
+    {
+      "id": 207,
+      "name": "Betty Go-Belmonte",
+      "line": "LRT2",
+      "sequence": 7
+    },
+    {
+      "id": 208,
+      "name": "Araneta-Cubao",
+      "line": "LRT2",
+      "sequence": 8
+    },
+    {
+      "id": 209,
+      "name": "Anonas",
+      "line": "LRT2",
+      "sequence": 9
+    },
+    {
+      "id": 210,
+      "name": "Katipunan",
+      "line": "LRT2",
+      "sequence": 10
+    },
+    {
+      "id": 211,
+      "name": "Santolan",
+      "line": "LRT2",
+      "sequence": 11
+    },
+    {
+      "id": 212,
+      "name": "Marikina",
+      "line": "LRT2",
+      "sequence": 12
+    },
+    {
+      "id": 213,
+      "name": "Antipolo",
+      "line": "LRT2",
+      "sequence": 13
+    }
+  ],
+  "stationFares": [
+    {
+      "fromStationId": 1,
+      "toStationId": 2,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 3,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 4,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 5,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 7,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 8,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 9,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 10,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 11,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 12,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 1,
+      "toStationId": 13,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 1,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 3,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 4,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 5,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 8,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 9,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 10,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 11,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 12,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 2,
+      "toStationId": 13,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 1,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 2,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 4,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 5,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 9,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 10,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 11,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 12,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 3,
+      "toStationId": 13,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 1,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 2,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 3,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 5,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 6,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 9,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 10,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 11,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 12,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 4,
+      "toStationId": 13,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 1,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 2,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 3,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 4,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 6,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 7,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 9,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 10,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 11,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 12,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 5,
+      "toStationId": 13,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 1,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 2,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 3,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 4,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 5,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 7,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 8,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 9,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 10,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 11,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 12,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 6,
+      "toStationId": 13,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 1,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 2,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 3,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 4,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 5,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 6,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 8,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 9,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 10,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 11,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 12,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 7,
+      "toStationId": 13,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 1,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 2,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 3,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 4,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 5,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 6,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 7,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 9,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 10,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 11,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 12,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 8,
+      "toStationId": 13,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 1,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 2,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 3,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 4,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 5,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 7,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 8,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 10,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 11,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 12,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 9,
+      "toStationId": 13,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 1,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 2,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 3,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 4,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 5,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 8,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 9,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 11,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 12,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 10,
+      "toStationId": 13,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 1,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 2,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 3,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 4,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 5,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 6,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 9,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 10,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 12,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 11,
+      "toStationId": 13,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 1,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 2,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 3,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 4,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 5,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 6,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 7,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 9,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 10,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 11,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 12,
+      "toStationId": 13,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 1,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 2,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 3,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 4,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 5,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 6,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 7,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 8,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 9,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 10,
+      "fareCentavos": 800,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 11,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 13,
+      "toStationId": 12,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 102,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 103,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 104,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 105,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 106,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 107,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 108,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 109,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 110,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 111,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 112,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 113,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 114,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 115,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 116,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 117,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 118,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 119,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 120,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 121,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 122,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 123,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 124,
+      "fareCentavos": 5050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 101,
+      "toStationId": 125,
+      "fareCentavos": 5200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 101,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 103,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 104,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 105,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 106,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 107,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 108,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 109,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 110,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 111,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 112,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 113,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 114,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 115,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 116,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 117,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 118,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 119,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 120,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 121,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 122,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 123,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 124,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 102,
+      "toStationId": 125,
+      "fareCentavos": 5050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 101,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 102,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 104,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 105,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 106,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 107,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 108,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 109,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 110,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 111,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 112,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 113,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 114,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 115,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 116,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 117,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 118,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 119,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 120,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 121,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 122,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 123,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 124,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 103,
+      "toStationId": 125,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 101,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 102,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 103,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 105,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 106,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 107,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 108,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 109,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 110,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 111,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 112,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 113,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 114,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 115,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 116,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 117,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 118,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 119,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 120,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 121,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 122,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 123,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 124,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 104,
+      "toStationId": 125,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 101,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 102,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 103,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 104,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 106,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 107,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 108,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 109,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 110,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 111,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 112,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 113,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 114,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 115,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 116,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 117,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 118,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 119,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 120,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 121,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 122,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 123,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 124,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 105,
+      "toStationId": 125,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 101,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 102,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 103,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 104,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 105,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 107,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 108,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 109,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 110,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 111,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 112,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 113,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 114,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 115,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 116,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 117,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 118,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 119,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 120,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 121,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 122,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 123,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 124,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 106,
+      "toStationId": 125,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 101,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 102,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 103,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 104,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 105,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 106,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 108,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 109,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 110,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 111,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 112,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 113,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 114,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 115,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 116,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 117,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 118,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 119,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 120,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 121,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 122,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 123,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 124,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 107,
+      "toStationId": 125,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 101,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 102,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 103,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 104,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 105,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 106,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 107,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 109,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 110,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 111,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 112,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 113,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 114,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 115,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 116,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 117,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 118,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 119,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 120,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 121,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 122,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 123,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 124,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 108,
+      "toStationId": 125,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 101,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 102,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 103,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 104,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 105,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 106,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 107,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 108,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 110,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 111,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 112,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 113,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 114,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 115,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 116,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 117,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 118,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 119,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 120,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 121,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 122,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 123,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 124,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 109,
+      "toStationId": 125,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 101,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 102,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 103,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 104,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 105,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 106,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 107,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 108,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 109,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 111,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 112,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 113,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 114,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 115,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 116,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 117,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 118,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 119,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 120,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 121,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 122,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 123,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 124,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 110,
+      "toStationId": 125,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 101,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 102,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 103,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 104,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 105,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 106,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 107,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 108,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 109,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 110,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 112,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 113,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 114,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 115,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 116,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 117,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 118,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 119,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 120,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 121,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 122,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 123,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 124,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 111,
+      "toStationId": 125,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 101,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 102,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 103,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 104,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 105,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 106,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 107,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 108,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 109,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 110,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 111,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 113,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 114,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 115,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 116,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 117,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 118,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 119,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 120,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 121,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 122,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 123,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 124,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 112,
+      "toStationId": 125,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 101,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 102,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 103,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 104,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 105,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 106,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 107,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 108,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 109,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 110,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 111,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 112,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 114,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 115,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 116,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 117,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 118,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 119,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 120,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 121,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 122,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 123,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 124,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 113,
+      "toStationId": 125,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 101,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 102,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 103,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 104,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 105,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 106,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 107,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 108,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 109,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 110,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 111,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 112,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 113,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 115,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 116,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 117,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 118,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 119,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 120,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 121,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 122,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 123,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 124,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 114,
+      "toStationId": 125,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 101,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 102,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 103,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 104,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 105,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 106,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 107,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 108,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 109,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 110,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 111,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 112,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 113,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 114,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 116,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 117,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 118,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 119,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 120,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 121,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 122,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 123,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 124,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 115,
+      "toStationId": 125,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 101,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 102,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 103,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 104,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 105,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 106,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 107,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 108,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 109,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 110,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 111,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 112,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 113,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 114,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 115,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 117,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 118,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 119,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 120,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 121,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 122,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 123,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 124,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 116,
+      "toStationId": 125,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 101,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 102,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 103,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 104,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 105,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 106,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 107,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 108,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 109,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 110,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 111,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 112,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 113,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 114,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 115,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 116,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 118,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 119,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 120,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 121,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 122,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 123,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 124,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 117,
+      "toStationId": 125,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 101,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 102,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 103,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 104,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 105,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 106,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 107,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 108,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 109,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 110,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 111,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 112,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 113,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 114,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 115,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 116,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 117,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 119,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 120,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 121,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 122,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 123,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 124,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 118,
+      "toStationId": 125,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 101,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 102,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 103,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 104,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 105,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 106,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 107,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 108,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 109,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 110,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 111,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 112,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 113,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 114,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 115,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 116,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 117,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 118,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 120,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 121,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 122,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 123,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 124,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 119,
+      "toStationId": 125,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 101,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 102,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 103,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 104,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 105,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 106,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 107,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 108,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 109,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 110,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 111,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 112,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 113,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 114,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 115,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 116,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 117,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 118,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 119,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 121,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 122,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 123,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 124,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 120,
+      "toStationId": 125,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 101,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 102,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 103,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 104,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 105,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 106,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 107,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 108,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 109,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 110,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 111,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 112,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 113,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 114,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 115,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 116,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 117,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 118,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 119,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 120,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 122,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 123,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 124,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 121,
+      "toStationId": 125,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 101,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 102,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 103,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 104,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 105,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 106,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 107,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 108,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 109,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 110,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 111,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 112,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 113,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 114,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 115,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 116,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 117,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 118,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 119,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 120,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 121,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 123,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 124,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 122,
+      "toStationId": 125,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 101,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 102,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 103,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 104,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 105,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 106,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 107,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 108,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 109,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 110,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 111,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 112,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 113,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 114,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 115,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 116,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 117,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 118,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 119,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 120,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 121,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 122,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 124,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 123,
+      "toStationId": 125,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 101,
+      "fareCentavos": 5050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 102,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 103,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 104,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 105,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 106,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 107,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 108,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 109,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 110,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 111,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 112,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 113,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 114,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 115,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 116,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 117,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 118,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 119,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 120,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 121,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 122,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 123,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 124,
+      "toStationId": 125,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 101,
+      "fareCentavos": 5200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 102,
+      "fareCentavos": 5050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 103,
+      "fareCentavos": 4925,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 104,
+      "fareCentavos": 4775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 105,
+      "fareCentavos": 4625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 106,
+      "fareCentavos": 4475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 107,
+      "fareCentavos": 4350,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 108,
+      "fareCentavos": 4200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 109,
+      "fareCentavos": 4050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 110,
+      "fareCentavos": 3900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 111,
+      "fareCentavos": 3775,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 112,
+      "fareCentavos": 3625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 113,
+      "fareCentavos": 3475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 114,
+      "fareCentavos": 3325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 115,
+      "fareCentavos": 3200,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 116,
+      "fareCentavos": 3050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 117,
+      "fareCentavos": 2900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 118,
+      "fareCentavos": 2750,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 119,
+      "fareCentavos": 2625,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 120,
+      "fareCentavos": 2475,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 121,
+      "fareCentavos": 2325,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 122,
+      "fareCentavos": 2175,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 123,
+      "fareCentavos": 2050,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 125,
+      "toStationId": 124,
+      "fareCentavos": 1900,
+      "effectiveDate": "2025-04-02"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 202,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 203,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 204,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 205,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 206,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 207,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 208,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 209,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 210,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 211,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 212,
+      "fareCentavos": 1550,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 201,
+      "toStationId": 213,
+      "fareCentavos": 1650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 201,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 203,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 204,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 205,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 206,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 207,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 208,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 209,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 210,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 211,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 212,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 202,
+      "toStationId": 213,
+      "fareCentavos": 1550,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 201,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 202,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 204,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 205,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 206,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 207,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 208,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 209,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 210,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 211,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 212,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 203,
+      "toStationId": 213,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 201,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 202,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 203,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 205,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 206,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 207,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 208,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 209,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 210,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 211,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 212,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 204,
+      "toStationId": 213,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 201,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 202,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 203,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 204,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 206,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 207,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 208,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 209,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 210,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 211,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 212,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 205,
+      "toStationId": 213,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 201,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 202,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 203,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 204,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 205,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 207,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 208,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 209,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 210,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 211,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 212,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 206,
+      "toStationId": 213,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 201,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 202,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 203,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 204,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 205,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 206,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 208,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 209,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 210,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 211,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 212,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 207,
+      "toStationId": 213,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 201,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 202,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 203,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 204,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 205,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 206,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 207,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 209,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 210,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 211,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 212,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 208,
+      "toStationId": 213,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 201,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 202,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 203,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 204,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 205,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 206,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 207,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 208,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 210,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 211,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 212,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 209,
+      "toStationId": 213,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 201,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 202,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 203,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 204,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 205,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 206,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 207,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 208,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 209,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 211,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 212,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 210,
+      "toStationId": 213,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 201,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 202,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 203,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 204,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 205,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 206,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 207,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 208,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 209,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 210,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 212,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 211,
+      "toStationId": 213,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 201,
+      "fareCentavos": 1550,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 202,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 203,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 204,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 205,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 206,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 207,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 208,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 209,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 210,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 211,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 212,
+      "toStationId": 213,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 201,
+      "fareCentavos": 1650,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 202,
+      "fareCentavos": 1550,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 203,
+      "fareCentavos": 1450,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 204,
+      "fareCentavos": 1400,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 205,
+      "fareCentavos": 1300,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 206,
+      "fareCentavos": 1200,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 207,
+      "fareCentavos": 1100,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 208,
+      "fareCentavos": 1000,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 209,
+      "fareCentavos": 900,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 210,
+      "fareCentavos": 850,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 211,
+      "fareCentavos": 750,
+      "effectiveDate": "2026-03-23"
+    },
+    {
+      "fromStationId": 213,
+      "toStationId": 212,
+      "fareCentavos": 650,
+      "effectiveDate": "2026-03-23"
+    }
+  ]
+}
