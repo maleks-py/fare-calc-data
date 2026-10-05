@@ -1,0 +1,135 @@
+[
+ {
+  "name": "SM City North EDSA",
+  "lat": 14.657027,
+  "lon": 121.030481,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "TriNoma",
+  "lat": 14.653083,
+  "lon": 121.033417,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "SM City Fairview",
+  "lat": 14.733691,
+  "lon": 121.058492,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Eastwood City",
+  "lat": 14.609692,
+  "lon": 121.080086,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Araneta City (Cubao)",
+  "lat": 14.6207,
+  "lon": 121.0532,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Greenhills, San Juan",
+  "lat": 14.6018,
+  "lon": 121.0468,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "SM Megamall",
+  "lat": 14.584448,
+  "lon": 121.056771,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Ortigas Center",
+  "lat": 14.583333,
+  "lon": 121.061111,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "University of Santo Tomas",
+  "lat": 14.609722,
+  "lon": 120.989722,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Divisoria",
+  "lat": 14.606,
+  "lon": 120.972,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Quiapo Church",
+  "lat": 14.59878,
+  "lon": 120.98377,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Manila City Hall",
+  "lat": 14.589793,
+  "lon": 120.981617,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Intramuros",
+  "lat": 14.5896,
+  "lon": 120.9754,
+  "kind": "destination",
+  "source": "approximate district centroid"
+ },
+ {
+  "name": "University of the Philippines Diliman",
+  "lat": 14.654861,
+  "lon": 121.064469,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Glorietta, Makati",
+  "lat": 14.551111,
+  "lon": 121.025278,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Bonifacio Global City",
+  "lat": 14.550806,
+  "lon": 121.050972,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "SM Mall of Asia",
+  "lat": 14.535278,
+  "lon": 120.982222,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "NAIA Terminal 3",
+  "lat": 14.5192,
+  "lon": 121.0135,
+  "kind": "destination",
+  "source": "Wikidata"
+ },
+ {
+  "name": "Alabang Town Center",
+  "lat": 14.4235,
+  "lon": 121.0298,
+  "kind": "destination",
+  "source": "Wikidata"
+ }
+]

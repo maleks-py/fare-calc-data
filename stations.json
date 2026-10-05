@@ -1,0 +1,461 @@
+[
+ {
+  "id": 1,
+  "name": "North Avenue",
+  "line": "MRT3",
+  "sequence": 1,
+  "lat": 14.652444,
+  "lon": 121.032167,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 2,
+  "name": "Quezon Avenue",
+  "line": "MRT3",
+  "sequence": 2,
+  "lat": 14.642444,
+  "lon": 121.038674,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 3,
+  "name": "GMA-Kamuning",
+  "line": "MRT3",
+  "sequence": 3,
+  "lat": 14.635144,
+  "lon": 121.043361,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 4,
+  "name": "Araneta-Cubao",
+  "line": "MRT3",
+  "sequence": 4,
+  "lat": 14.619431,
+  "lon": 121.051036,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 5,
+  "name": "Santolan-Annapolis",
+  "line": "MRT3",
+  "sequence": 5,
+  "lat": 14.607711,
+  "lon": 121.056442,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 6,
+  "name": "Ortigas",
+  "line": "MRT3",
+  "sequence": 6,
+  "lat": 14.587939,
+  "lon": 121.056706,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 7,
+  "name": "Shaw Boulevard",
+  "line": "MRT3",
+  "sequence": 7,
+  "lat": 14.581397,
+  "lon": 121.053681,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 8,
+  "name": "Boni",
+  "line": "MRT3",
+  "sequence": 8,
+  "lat": 14.573764,
+  "lon": 121.048167,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 9,
+  "name": "Guadalupe",
+  "line": "MRT3",
+  "sequence": 9,
+  "lat": 14.566861,
+  "lon": 121.045467,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 10,
+  "name": "Buendia",
+  "line": "MRT3",
+  "sequence": 10,
+  "lat": 14.554203,
+  "lon": 121.034094,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 11,
+  "name": "Ayala",
+  "line": "MRT3",
+  "sequence": 11,
+  "lat": 14.548942,
+  "lon": 121.027672,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 12,
+  "name": "Magallanes",
+  "line": "MRT3",
+  "sequence": 12,
+  "lat": 14.541786,
+  "lon": 121.019233,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 13,
+  "name": "Taft Avenue",
+  "line": "MRT3",
+  "sequence": 13,
+  "lat": 14.537517,
+  "lon": 121.001406,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 101,
+  "name": "Fernando Poe Jr.",
+  "line": "LRT1",
+  "sequence": 1,
+  "lat": 14.657494,
+  "lon": 121.021211,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 102,
+  "name": "Balintawak",
+  "line": "LRT1",
+  "sequence": 2,
+  "lat": 14.657344,
+  "lon": 121.003961,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 103,
+  "name": "Monumento",
+  "line": "LRT1",
+  "sequence": 3,
+  "lat": 14.654094,
+  "lon": 120.983906,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 104,
+  "name": "5th Avenue",
+  "line": "LRT1",
+  "sequence": 4,
+  "lat": 14.644417,
+  "lon": 120.983583,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 105,
+  "name": "R. Papa",
+  "line": "LRT1",
+  "sequence": 5,
+  "lat": 14.636167,
+  "lon": 120.982333,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 106,
+  "name": "Abad Santos",
+  "line": "LRT1",
+  "sequence": 6,
+  "lat": 14.630642,
+  "lon": 120.981397,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 107,
+  "name": "Blumentritt",
+  "line": "LRT1",
+  "sequence": 7,
+  "lat": 14.622792,
+  "lon": 120.982936,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 108,
+  "name": "Tayuman",
+  "line": "LRT1",
+  "sequence": 8,
+  "lat": 14.616794,
+  "lon": 120.982758,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 109,
+  "name": "Bambang",
+  "line": "LRT1",
+  "sequence": 9,
+  "lat": 14.611111,
+  "lon": 120.9825,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 110,
+  "name": "Doroteo Jose",
+  "line": "LRT1",
+  "sequence": 10,
+  "lat": 14.605475,
+  "lon": 120.982069,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 111,
+  "name": "Carriedo",
+  "line": "LRT1",
+  "sequence": 11,
+  "lat": 14.599,
+  "lon": 120.981358,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 112,
+  "name": "Central Terminal",
+  "line": "LRT1",
+  "sequence": 12,
+  "lat": 14.592903,
+  "lon": 120.981622,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 113,
+  "name": "UN Avenue",
+  "line": "LRT1",
+  "sequence": 13,
+  "lat": 14.582492,
+  "lon": 120.984661,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 114,
+  "name": "Pedro Gil",
+  "line": "LRT1",
+  "sequence": 14,
+  "lat": 14.576631,
+  "lon": 120.987992,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 115,
+  "name": "Quirino Avenue",
+  "line": "LRT1",
+  "sequence": 15,
+  "lat": 14.570219,
+  "lon": 120.991675,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 116,
+  "name": "Vito Cruz",
+  "line": "LRT1",
+  "sequence": 16,
+  "lat": 14.563475,
+  "lon": 120.994681,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 117,
+  "name": "Gil Puyat",
+  "line": "LRT1",
+  "sequence": 17,
+  "lat": 14.554128,
+  "lon": 120.997178,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 118,
+  "name": "Libertad",
+  "line": "LRT1",
+  "sequence": 18,
+  "lat": 14.547783,
+  "lon": 120.998631,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 119,
+  "name": "EDSA",
+  "line": "LRT1",
+  "sequence": 19,
+  "lat": 14.538825,
+  "lon": 121.000683,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 120,
+  "name": "Baclaran",
+  "line": "LRT1",
+  "sequence": 20,
+  "lat": 14.534306,
+  "lon": 120.998361,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 121,
+  "name": "Redemptorist",
+  "line": "LRT1",
+  "sequence": 21,
+  "lat": 14.53028,
+  "lon": 120.99294,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 122,
+  "name": "MIA",
+  "line": "LRT1",
+  "sequence": 22,
+  "lat": 14.51843,
+  "lon": 120.99299,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 123,
+  "name": "Asia World",
+  "line": "LRT1",
+  "sequence": 23,
+  "lat": 14.50848,
+  "lon": 120.99128,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 124,
+  "name": "Ninoy Aquino",
+  "line": "LRT1",
+  "sequence": 24,
+  "lat": 14.49864,
+  "lon": 120.99436,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 125,
+  "name": "Dr. Santos",
+  "line": "LRT1",
+  "sequence": 25,
+  "lat": 14.4853,
+  "lon": 120.98956,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 201,
+  "name": "Recto",
+  "line": "LRT2",
+  "sequence": 1,
+  "lat": 14.603497,
+  "lon": 120.983403,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 202,
+  "name": "Legarda",
+  "line": "LRT2",
+  "sequence": 2,
+  "lat": 14.60085,
+  "lon": 120.992692,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 203,
+  "name": "Pureza",
+  "line": "LRT2",
+  "sequence": 3,
+  "lat": 14.601667,
+  "lon": 121.005194,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 204,
+  "name": "V. Mapa",
+  "line": "LRT2",
+  "sequence": 4,
+  "lat": 14.60409,
+  "lon": 121.01712,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 205,
+  "name": "J. Ruiz",
+  "line": "LRT2",
+  "sequence": 5,
+  "lat": 14.610556,
+  "lon": 121.026111,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 206,
+  "name": "Gilmore",
+  "line": "LRT2",
+  "sequence": 6,
+  "lat": 14.613653,
+  "lon": 121.034347,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 207,
+  "name": "Betty Go-Belmonte",
+  "line": "LRT2",
+  "sequence": 7,
+  "lat": 14.618572,
+  "lon": 121.042731,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 208,
+  "name": "Araneta-Cubao",
+  "line": "LRT2",
+  "sequence": 8,
+  "lat": 14.622678,
+  "lon": 121.052636,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 209,
+  "name": "Anonas",
+  "line": "LRT2",
+  "sequence": 9,
+  "lat": 14.628,
+  "lon": 121.064694,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 210,
+  "name": "Katipunan",
+  "line": "LRT2",
+  "sequence": 10,
+  "lat": 14.631097,
+  "lon": 121.072958,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 211,
+  "name": "Santolan",
+  "line": "LRT2",
+  "sequence": 11,
+  "lat": 14.622139,
+  "lon": 121.085917,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 212,
+  "name": "Marikina",
+  "line": "LRT2",
+  "sequence": 12,
+  "lat": 14.620278,
+  "lon": 121.100278,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ },
+ {
+  "id": 213,
+  "name": "Antipolo",
+  "line": "LRT2",
+  "sequence": 13,
+  "lat": 14.624722,
+  "lon": 121.121111,
+  "source": "Wikidata (line membership P81, coordinates P625), verified 2026-10-02"
+ }
+]
